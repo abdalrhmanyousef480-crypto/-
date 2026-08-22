@@ -148,7 +148,12 @@ button{font-family:inherit; cursor:pointer;}
 .hero p.lead{font-size:1.1rem; color:#C3DAE5; max-width:540px;}
 .hero-ctas{display:flex; gap:16px; flex-wrap:wrap; margin-top:34px;}
 
-.trust-row{display:flex; gap:34px; margin-top:56px; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,.14); padding-top:26px;}
+.trust-row{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:20px 24px;
+  margin-top:56px; padding-top:26px; border-top:1px solid rgba(255,255,255,.14);
+}
+.trust-row .stat{border-inline-start:1px solid rgba(255,255,255,.14); padding-inline-start:20px;}
+.trust-row .stat:first-child{border-inline-start:none; padding-inline-start:0;}
 .trust-row .stat b{display:block; font-family:var(--font-display); font-size:1.7rem; color:#fff;}
 .trust-row .stat span{font-family:var(--font-util); font-size:.76rem; color:#8FB2C2; letter-spacing:.02em;}
 
@@ -381,7 +386,10 @@ footer a:hover{color:#fff;}
   .hero-badge{padding:11px 14px; gap:9px; bottom:-14px; right:-10px;}
   .hero-badge b{font-size:.85rem;}
   .hero-badge span{font-size:.72rem;}
-  .trust-row{gap:22px; margin-top:38px; padding-top:20px;}
+  .trust-row{gap:14px 16px; margin-top:38px; padding-top:20px;}
+  .trust-row .stat{padding-inline-start:14px;}
+  .trust-row .stat b{font-size:1.35rem;}
+  .trust-row .stat span{font-size:.68rem;}
   section{padding:60px 0;}
   .services-grid{grid-template-columns:1fr;}
   .process-grid{grid-template-columns:1fr;}
