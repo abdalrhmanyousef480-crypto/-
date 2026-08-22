@@ -1,0 +1,18 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C86BE"/>
+      <stop offset="1" stop-color="#0B2739"/>
+    </linearGradient>
+    <linearGradient id="mGrad" x1="20" y1="30" x2="100" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFF3FC"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="116" height="116" rx="30" fill="url(#badgeGrad)"/>
+  <path d="M28 82 V40 L60 66 L92 40 V82" fill="none" stroke="url(#mGrad)" stroke-width="10.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#FF7A3D" stroke-width="4.5" stroke-linecap="round" opacity="0.95">
+    <path d="M79 24 C85 22, 90 22, 95 24" fill="none"/>
+    <path d="M84 17 C89 15.5, 93 15.5, 97 17" fill="none" opacity="0.7"/>
+  </g>
+</svg>
