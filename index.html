@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CABRA TECHNOLOGY — Digital Systems That Move Business</title>
-<meta name="description" content="CABRA TECHNOLOGY builds websites, e-commerce, brand identity, Google Ads and SEO systems engineered for measurable growth.">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<title>كوبونيتا — وفر أكثر مع أفضل أكواد الخصم</title>
+<meta name="description" content="آلاف الكوبونات الموثقة من متاجرك المفضلة، محدثة يوميًا. اعثر على كود الخصم المناسب لك في ثوانٍ." />
+<meta name="theme-color" content="#14213D" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%2314213D%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>%25</text></svg>" />
 
-<meta property="og:title" content="CABRA TECHNOLOGY — Digital Systems That Move Business">
-<meta property="og:description" content="Websites, e-commerce, brand identity, Google Ads and SEO — engineered for measurable growth.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/ct-symbol.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CABRA TECHNOLOGY">
-<meta name="twitter:description" content="Digital systems that move business.">
+<!-- Open Graph defaults (overridden per-page via JS) -->
+<meta property="og:site_name" content="كوبونيتا" />
+<meta property="og:locale" content="ar_AR" />
+<meta name="robots" content="index, follow" />
 
-<link rel="icon" type="image/png" href="assets/img/ct-symbol.png">
-<link rel="canonical" href="https://cabra.tech/">
-
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/style.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Cabra Technology",
-  "url": "https://cabra.tech",
-  "logo": "assets/img/ct-symbol.png",
-  "description": "Digital technology company providing website design, e-commerce development, Google Ads, SEO, and brand identity.",
-  "sameAs": [
-    "https://instagram.com/cabra.tech",
-    "https://linkedin.com/company/cabra-technology"
-  ]
-}
-</script>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
 <div id="root"></div>
 
-<script type="text/babel" data-presets="react" src="assets/js/app.jsx"></script>
+<!-- React (production, via CDN) -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+<!-- App scripts, order matters -->
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="utils.js"></script>
+<script src="icons.js"></script>
+<script src="app-core.js"></script>
+<script src="components-header.js"></script>
+<script src="components-footer.js"></script>
+<script src="components-cards.js"></script>
+<script src="components-filters.js"></script>
+<script src="pages-home.js"></script>
+<script src="pages-stores.js"></script>
+<script src="pages-categories.js"></script>
+<script src="pages-coupon-detail.js"></script>
+<script src="pages-blog.js"></script>
+<script src="pages-static.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
