@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — CABRA Technology</title>
+<meta name="description" content="Digital products, growth, brand and business systems — CABRA's four connected capability systems.">
+<link rel="stylesheet" href="cabra.css">
+<style>
+  .page-hero{ padding:200px 0 80px; background:var(--black); }
+  .page-hero .eyebrow{ margin-bottom:24px; }
+  .page-hero .body-lg{ margin-top:24px; }
+
+  .service-block{ border-top:1px solid rgba(255,255,255,.1); }
+  .service-block:last-of-type{ border-bottom:1px solid rgba(255,255,255,.1); }
+  .service-block-inner{
+    display:grid; grid-template-columns:.55fr 1.45fr; gap:64px;
+    padding:100px 0;
+  }
+  .service-side{ position:sticky; top:120px; align-self:start; }
+  .service-group-num{ font-family:var(--font-mono); font-size:13px; color:var(--lime); letter-spacing:.1em; }
+  .service-group-name{ font-family:var(--font-display); font-size:clamp(32px,3.4vw,52px); font-weight:500; letter-spacing:-.01em; margin:14px 0 20px; line-height:1.02; }
+  .service-tags{ display:flex; flex-direction:column; gap:8px; font-family:var(--font-mono); font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--gray-mid); }
+
+  .sub-service{ padding:44px 0; border-top:1px solid rgba(255,255,255,.08); display:grid; grid-template-columns:1fr 1.2fr; gap:40px; align-items:center; }
+  .sub-service:first-child{ border-top:none; }
+  .sub-name{ font-family:var(--font-display); font-size:26px; font-weight:500; margin-bottom:10px; }
+  .sub-desc{ color:var(--gray-mid); font-size:15px; line-height:1.6; max-width:40ch; }
+  .sub-visual{ aspect-ratio:16/10; border-radius:2px; position:relative; overflow:hidden; }
+  .sv1{ background:linear-gradient(135deg,#111,#1c1c1c); }
+  .sv2{ background:linear-gradient(135deg,#0e0e0e,#191919); }
+  .sv3{ background:linear-gradient(135deg,rgba(165,199,26,.12),#0e0e0e); }
+  .sv-inner{ position:absolute; inset:20px; }
+
+  @media(max-width:900px){
+    .service-block-inner{ grid-template-columns:1fr; gap:32px; }
+    .service-side{ position:static; }
+    .sub-service{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<nav class="nav">
+  <a href="index.html"><img src="assets/cabra-logo.png" alt="CABRA Technology" class="nav-logo"></a>
+  <div class="nav-links">
+    <a href="services.html" class="active">Services</a>
+    <a href="work.html">Work</a>
+    <a href="technology.html">Technology</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-lang"><a href="index.html" class="active">EN</a><a href="#">AR</a><a href="#">SK</a></div>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Services</div>
+    <h1 class="h-display">Four systems.<br>One studio.</h1>
+    <p class="body-lg">CABRA groups its work into four connected capability systems — product, growth, brand and infrastructure — deployed together or independently, depending on what a business needs.</p>
+  </div>
+</header>
+
+<!-- 01 DIGITAL PRODUCTS -->
+<section class="service-block">
+  <div class="wrap service-block-inner">
+    <div class="service-side">
+      <div class="service-group-num">01</div>
+      <h2 class="service-group-name">Digital Products</h2>
+      <p class="body-md">Websites, ecommerce experiences and web applications built for speed, clarity and conversion.</p>
+      <div class="service-tags" style="margin-top:24px;">
+        <span>Web Development</span><span>Ecommerce</span><span>Web Applications</span>
+      </div>
+    </div>
+    <div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Web Development</div>
+          <p class="sub-desc">Marketing sites and product sites engineered for performance — clean architecture, fast load times, built to convert.</p>
+        </div>
+        <div class="sub-visual sv1"><div class="sv-inner">
+          <div class="mock-browser-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-line" style="width:70%;height:14px;margin-top:14px;"></div>
+          <div class="mock-line" style="width:50%;height:14px;"></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Ecommerce</div>
+          <p class="sub-desc">Product-first storefronts — catalogue, cart, checkout and analytics designed to move people from browsing to buying.</p>
+        </div>
+        <div class="sub-visual sv2"><div class="sv-inner mock-grid-ui" style="height:100%;">
+          <div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Web Applications</div>
+          <p class="sub-desc">Custom tools and platforms — internal or customer-facing — built with the same craft as consumer products.</p>
+        </div>
+        <div class="sub-visual sv3"><div class="sv-inner">
+          <div class="mock-bars" style="height:100%;"><div class="mock-bar" style="height:40%"></div><div class="mock-bar" style="height:70%"></div><div class="mock-bar" style="height:55%"></div><div class="mock-bar" style="height:90%"></div><div class="mock-bar" style="height:60%"></div></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 GROWTH -->
+<section class="service-block">
+  <div class="wrap service-block-inner">
+    <div class="service-side">
+      <div class="service-group-num">02</div>
+      <h2 class="service-group-name">Growth</h2>
+      <p class="body-md">Paid acquisition, search visibility and marketing systems measured against real business outcomes.</p>
+      <div class="service-tags" style="margin-top:24px;">
+        <span>Google Ads</span><span>SEO</span><span>Digital Marketing</span>
+      </div>
+    </div>
+    <div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Google Ads</div>
+          <p class="sub-desc">Campaign performance built on measurable ROAS — structured accounts, tested creative, continuous optimization.</p>
+        </div>
+        <div class="sub-visual sv3"><div class="sv-inner">
+          <div style="display:flex;gap:24px;">
+            <div><div class="label-sm" style="color:var(--gray-mid)">ROAS</div><div style="font-family:var(--font-display);font-size:24px;color:var(--lime)">4.8x</div></div>
+            <div><div class="label-sm" style="color:var(--gray-mid)">CTR</div><div style="font-family:var(--font-display);font-size:24px;">3.2%</div></div>
+          </div>
+          <div class="mock-bars" style="height:100px;margin-top:14px;"><div class="mock-bar" style="height:40%"></div><div class="mock-bar" style="height:70%"></div><div class="mock-bar" style="height:55%"></div><div class="mock-bar" style="height:90%"></div></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">SEO</div>
+          <p class="sub-desc">Technical SEO, content and authority building — designed to move a business from page seven to page one.</p>
+        </div>
+        <div class="sub-visual sv1"><div class="sv-inner" style="display:flex;flex-direction:column;justify-content:center;gap:10px;">
+          <div style="font-family:var(--font-mono);font-size:13px;color:var(--gray-mid);">Page 07 → Page 03 → <span style="color:var(--lime);">Page 01</span></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Digital Marketing</div>
+          <p class="sub-desc">Cross-channel campaigns connecting paid, organic and lifecycle marketing into one measurable system.</p>
+        </div>
+        <div class="sub-visual sv2"><div class="sv-inner mock-grid-ui" style="height:100%;grid-template-columns:repeat(3,1fr);">
+          <div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 BRAND -->
+<section class="service-block">
+  <div class="wrap service-block-inner">
+    <div class="service-side">
+      <div class="service-group-num">03</div>
+      <h2 class="service-group-name">Brand</h2>
+      <p class="body-md">Identity systems, interface design and corporate profiles that give a business a coherent voice.</p>
+      <div class="service-tags" style="margin-top:24px;">
+        <span>Brand Identity</span><span>UI/UX</span><span>Corporate Profile</span>
+      </div>
+    </div>
+    <div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Brand Identity</div>
+          <p class="sub-desc">Logo, typography, color and voice — a complete visual system built to be applied consistently everywhere.</p>
+        </div>
+        <div class="sub-visual sv1"><div class="sv-inner" style="display:flex;flex-direction:column;justify-content:center;">
+          <div style="font-family:var(--font-display);font-size:36px;">Aa Bb Cc</div>
+          <div class="mock-swatches" style="margin-top:12px;"><div class="mock-swatch" style="background:#050505"></div><div class="mock-swatch" style="background:#A5C71A"></div><div class="mock-swatch" style="background:#fff"></div></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">UI/UX</div>
+          <p class="sub-desc">Interface design grounded in real user behavior — wireframes, prototypes and polished, tested screens.</p>
+        </div>
+        <div class="sub-visual sv2"><div class="sv-inner mock-grid-ui" style="height:100%;">
+          <div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Corporate Profile</div>
+          <p class="sub-desc">Presentation-ready company profiles — vision, capabilities and portfolio in one polished document.</p>
+        </div>
+        <div class="sub-visual sv3"><div class="sv-inner" style="display:flex;flex-direction:column;gap:10px;justify-content:center;">
+          <div class="mock-line w60"></div><div class="mock-line w40"></div><div class="mock-line" style="width:80%"></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 SYSTEMS -->
+<section class="service-block">
+  <div class="wrap service-block-inner">
+    <div class="service-side">
+      <div class="service-group-num">04</div>
+      <h2 class="service-group-name">Systems</h2>
+      <p class="body-md">Business software, automation and integrations that connect the tools a company already runs on.</p>
+      <div class="service-tags" style="margin-top:24px;">
+        <span>Business Systems</span><span>Automation</span><span>Integrations</span>
+      </div>
+    </div>
+    <div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Business Systems</div>
+          <p class="sub-desc">Sales, inventory, invoicing and reporting — custom software built around how a business actually operates.</p>
+        </div>
+        <div class="sub-visual sv1"><div class="sv-inner mock-grid-ui" style="height:100%;grid-template-columns:repeat(3,1fr);">
+          <div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Automation</div>
+          <p class="sub-desc">Repetitive workflows removed from the day-to-day — from lead routing to order fulfillment.</p>
+        </div>
+        <div class="sub-visual sv2"><div class="sv-inner" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="120" viewBox="0 0 100 100"><polygon points="50,15 85,85 15,85" fill="none" stroke="rgba(165,199,26,.6)" stroke-width="2"/></svg>
+        </div></div>
+      </div>
+      <div class="sub-service">
+        <div>
+          <div class="sub-name">Integrations</div>
+          <p class="sub-desc">Connecting CRMs, payment systems and internal tools into a single, reliable operating layer.</p>
+        </div>
+        <div class="sub-visual sv3"><div class="sv-inner" style="display:flex;flex-direction:column;gap:10px;justify-content:center;">
+          <div class="mock-line w60"></div><div class="mock-line w40"></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta-simple" style="background:var(--black);padding:140px 0;text-align:center;border-top:1px solid rgba(255,255,255,.1);">
+  <div class="wrap">
+    <h2 class="h-1">Not sure which system<br>your business needs?</h2>
+    <div style="margin-top:36px;">
+      <a href="contact.html" class="btn btn-primary">Talk to CABRA <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="assets/cabra-logo.png" alt="CABRA Technology" style="height:24px;margin-bottom:20px;">
+        <p class="body-md" style="max-width:32ch;">A digital studio building products, brands and growth systems.</p>
+      </div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">Digital Products</a><a href="services.html">Growth</a><a href="services.html">Brand</a><a href="services.html">Systems</a></div>
+      <div class="footer-col"><h4>Studio</h4><a href="work.html">Work</a><a href="technology.html">Technology</a><a href="about.html">About</a><a href="process.html">Process</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="insights.html">Insights</a><a href="faq.html">FAQ</a><a href="solutions.html">Solutions</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="contact.html">Start a project</a><a href="mailto:hello@cabra.tech">hello@cabra.tech</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 CABRA Technology</span><span>EN · AR · SK</span></div>
+  </div>
+</footer>
+
+<script>
+  const cursorDot = document.getElementById('cursorDot');
+  window.addEventListener('mousemove', (e)=>{ cursorDot.style.left=e.clientX+'px'; cursorDot.style.top=e.clientY+'px'; });
+  document.querySelectorAll('a,button').forEach(el=>{
+    el.addEventListener('mouseenter', ()=>{ cursorDot.style.width='16px'; cursorDot.style.height='16px'; });
+    el.addEventListener('mouseleave', ()=>{ cursorDot.style.width='8px'; cursorDot.style.height='8px'; });
+  });
+</script>
+</body>
+</html>

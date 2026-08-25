@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — CABRA Technology</title>
+<meta name="description" content="Concept case studies from CABRA Technology across digital products, brand and business systems.">
+<link rel="stylesheet" href="cabra.css">
+<style>
+  .page-hero{ padding:200px 0 60px; background:var(--black); }
+  .work-filter{ display:flex; gap:12px; flex-wrap:wrap; margin-top:40px; }
+  .filter-chip{ font-family:var(--font-mono); font-size:12px; letter-spacing:.05em; text-transform:uppercase; border:1px solid rgba(255,255,255,.18); padding:10px 18px; transition:.3s; cursor:pointer; }
+  .filter-chip.active, .filter-chip:hover{ border-color:var(--lime); color:var(--lime); }
+
+  .case-item{ border-top:1px solid rgba(255,255,255,.1); padding:80px 0; }
+  .case-item:last-of-type{ border-bottom:1px solid rgba(255,255,255,.1); }
+  .case-top{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:20px; }
+  .case-tag{ font-family:var(--font-mono); font-size:12px; color:var(--lime); letter-spacing:.08em; text-transform:uppercase; }
+  .case-title{ font-family:var(--font-display); font-weight:500; font-size:clamp(34px,5vw,72px); letter-spacing:-.015em; line-height:.98; margin-top:14px; }
+  .case-visual{ aspect-ratio:21/10; border-radius:2px; overflow:hidden; position:relative; }
+  .case-visual-inner{ position:absolute; inset:36px; }
+  .case-footer{ display:flex; justify-content:space-between; margin-top:28px; flex-wrap:wrap; gap:16px; }
+  .case-stack{ display:flex; gap:14px; flex-wrap:wrap; font-family:var(--font-mono); font-size:11px; color:var(--gray-mid); text-transform:uppercase; letter-spacing:.05em; }
+  .case-stack span{ border:1px solid rgba(255,255,255,.14); padding:6px 10px; }
+</style>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<nav class="nav">
+  <a href="index.html"><img src="assets/cabra-logo.png" alt="CABRA Technology" class="nav-logo"></a>
+  <div class="nav-links">
+    <a href="services.html">Services</a>
+    <a href="work.html" class="active">Work</a>
+    <a href="technology.html">Technology</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-lang"><a href="index.html" class="active">EN</a><a href="#">AR</a><a href="#">SK</a></div>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Work</div>
+    <h1 class="h-display">Selected work.</h1>
+    <p class="body-lg" style="margin-top:24px;">The projects below are concept case studies illustrating CABRA's approach and craft. Real client work will replace these as projects are delivered and approved for publication.</p>
+    <div class="work-filter">
+      <span class="filter-chip active">All</span>
+      <span class="filter-chip">Digital Products</span>
+      <span class="filter-chip">Brand</span>
+      <span class="filter-chip">Growth</span>
+      <span class="filter-chip">Systems</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+
+    <a href="case-study.html" class="case-item" style="display:block;color:inherit;text-decoration:none;">
+      <div class="case-top">
+        <div>
+          <span class="case-tag">01 / Ecommerce · Concept Project</span>
+          <h2 class="case-title">Revenue<br>Engine.</h2>
+        </div>
+        <span class="work-link" style="font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;">View case study →</span>
+      </div>
+      <div class="case-visual" style="background:linear-gradient(135deg,#111,#1c1c1c 60%,rgba(165,199,26,.18) 100%);">
+        <div class="case-visual-inner">
+          <div class="mock-browser-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-grid-ui" style="margin-top:20px;"><div class="mock-card" style="grid-column:span 4;aspect-ratio:4/1;"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+        </div>
+      </div>
+      <div class="case-footer">
+        <div class="case-stack"><span>Strategy</span><span>UX/UI</span><span>Development</span><span>Growth</span></div>
+        <span class="label-sm">DTC · Retail</span>
+      </div>
+    </a>
+
+    <a href="case-study.html" class="case-item" style="display:block;color:inherit;text-decoration:none;">
+      <div class="case-top">
+        <div>
+          <span class="case-tag">02 / Brand Identity · Concept Project</span>
+          <h2 class="case-title">Full Identity<br>System.</h2>
+        </div>
+        <span class="work-link" style="font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;">View case study →</span>
+      </div>
+      <div class="case-visual" style="background:linear-gradient(135deg,#0e0e0e,#191919);">
+        <div class="case-visual-inner" style="display:flex;align-items:center;gap:48px;">
+          <div style="font-family:var(--font-display);font-size:72px;letter-spacing:-.02em;">Aa</div>
+          <div class="mock-swatches"><div class="mock-swatch" style="width:52px;height:52px;background:#050505"></div><div class="mock-swatch" style="width:52px;height:52px;background:#A5C71A"></div><div class="mock-swatch" style="width:52px;height:52px;background:#fff"></div></div>
+        </div>
+      </div>
+      <div class="case-footer">
+        <div class="case-stack"><span>Identity</span><span>Guidelines</span><span>Applications</span></div>
+        <span class="label-sm">Fintech</span>
+      </div>
+    </a>
+
+    <a href="case-study.html" class="case-item" style="display:block;color:inherit;text-decoration:none;">
+      <div class="case-top">
+        <div>
+          <span class="case-tag">03 / Business System · Concept Project</span>
+          <h2 class="case-title">Operations<br>Dashboard.</h2>
+        </div>
+        <span class="work-link" style="font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;">View case study →</span>
+      </div>
+      <div class="case-visual" style="background:linear-gradient(135deg,#101010,#1a1a1a 70%);">
+        <div class="case-visual-inner" style="display:flex;align-items:flex-end;">
+          <div class="mock-bars" style="height:70%;width:100%;"><div class="mock-bar" style="height:40%"></div><div class="mock-bar" style="height:70%"></div><div class="mock-bar" style="height:55%"></div><div class="mock-bar" style="height:90%"></div><div class="mock-bar" style="height:60%"></div><div class="mock-bar" style="height:80%"></div></div>
+        </div>
+      </div>
+      <div class="case-footer">
+        <div class="case-stack"><span>Systems</span><span>Automation</span><span>Integrations</span></div>
+        <span class="label-sm">Logistics</span>
+      </div>
+    </a>
+
+    <a href="case-study.html" class="case-item" style="display:block;color:inherit;text-decoration:none;">
+      <div class="case-top">
+        <div>
+          <span class="case-tag">04 / Growth · Concept Project</span>
+          <h2 class="case-title">Performance<br>System.</h2>
+        </div>
+        <span class="work-link" style="font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;">View case study →</span>
+      </div>
+      <div class="case-visual" style="background:linear-gradient(135deg,rgba(165,199,26,.1),#0e0e0e);">
+        <div class="case-visual-inner" style="display:flex;gap:40px;align-items:center;">
+          <div><div class="label-sm">ROAS</div><div style="font-family:var(--font-display);font-size:44px;color:var(--lime)">4.8x</div></div>
+          <div><div class="label-sm">Conversions</div><div style="font-family:var(--font-display);font-size:44px;">1,204</div></div>
+        </div>
+      </div>
+      <div class="case-footer">
+        <div class="case-stack"><span>Google Ads</span><span>SEO</span><span>Analytics</span></div>
+        <span class="label-sm">SaaS</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="final-cta" style="padding:160px 0 120px;">
+  <div class="wrap">
+    <h2 class="final-title" style="font-size:clamp(38px,6vw,80px);">Have a project<br>worth building<span class="tri-big"></span></h2>
+    <div class="final-actions"><a href="contact.html" class="btn btn-primary">Start a project <span class="btn-arrow">→</span></a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="assets/cabra-logo.png" alt="CABRA Technology" style="height:24px;margin-bottom:20px;">
+        <p class="body-md" style="max-width:32ch;">A digital studio building products, brands and growth systems.</p>
+      </div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">Digital Products</a><a href="services.html">Growth</a><a href="services.html">Brand</a><a href="services.html">Systems</a></div>
+      <div class="footer-col"><h4>Studio</h4><a href="work.html">Work</a><a href="technology.html">Technology</a><a href="about.html">About</a><a href="process.html">Process</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="insights.html">Insights</a><a href="faq.html">FAQ</a><a href="solutions.html">Solutions</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="contact.html">Start a project</a><a href="mailto:hello@cabra.tech">hello@cabra.tech</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 CABRA Technology</span><span>EN · AR · SK</span></div>
+  </div>
+</footer>
+
+<script>
+  const cursorDot = document.getElementById('cursorDot');
+  window.addEventListener('mousemove', (e)=>{ cursorDot.style.left=e.clientX+'px'; cursorDot.style.top=e.clientY+'px'; });
+  document.querySelectorAll('a,button,.filter-chip').forEach(el=>{
+    el.addEventListener('mouseenter', ()=>{ cursorDot.style.width='16px'; cursorDot.style.height='16px'; });
+    el.addEventListener('mouseleave', ()=>{ cursorDot.style.width='8px'; cursorDot.style.height='8px'; });
+  });
+  document.querySelectorAll('.filter-chip').forEach(chip=>{
+    chip.addEventListener('click', ()=>{
+      document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+      chip.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CABRA Technology</title>
+<meta name="description" content="Start a project with CABRA Technology.">
+<link rel="stylesheet" href="cabra.css">
+<style>
+  .contact-hero{ padding:200px 0 40px; background:var(--black); }
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:100px; padding:60px 0 160px; }
+  .contact-obj{ position:relative; aspect-ratio:1/1.1; display:flex; align-items:center; justify-content:center; }
+
+  .field-group{ margin-bottom:36px; }
+  .field-label{ font-family:var(--font-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-mid); display:block; margin-bottom:14px; }
+  .chip-group{ display:flex; flex-wrap:wrap; gap:10px; }
+  .chip{ font-family:var(--font-mono); font-size:12px; letter-spacing:.04em; border:1px solid rgba(255,255,255,.18); padding:11px 16px; cursor:pointer; transition:.25s; }
+  .chip.selected, .chip:hover{ border-color:var(--lime); color:var(--lime); }
+
+  .text-input{
+    width:100%; background:transparent; border:none; border-bottom:1px solid rgba(255,255,255,.2);
+    padding:14px 0; font-size:17px; color:var(--white); font-family:var(--font-body);
+    transition:border-color .3s;
+  }
+  .text-input:focus{ outline:none; border-color:var(--lime); }
+  .text-input::placeholder{ color:rgba(255,255,255,.3); }
+  textarea.text-input{ resize:vertical; min-height:100px; }
+
+  .row-2{ display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+  @media(max-width:900px){ .contact-grid{ grid-template-columns:1fr; gap:56px; } .row-2{ grid-template-columns:1fr; } }
+
+  .info-block{ margin-top:64px; }
+  .info-row{ display:flex; justify-content:space-between; padding:20px 0; border-top:1px solid rgba(255,255,255,.1); }
+  .info-row:last-child{ border-bottom:1px solid rgba(255,255,255,.1); }
+</style>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<nav class="nav">
+  <a href="index.html"><img src="assets/cabra-logo.png" alt="CABRA Technology" class="nav-logo"></a>
+  <div class="nav-links">
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="technology.html">Technology</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-lang"><a href="index.html" class="active">EN</a><a href="#">AR</a><a href="#">SK</a></div>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="contact-hero">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h1 class="h-display">Have a project<br>worth building?</h1>
+  </div>
+</header>
+
+<section class="wrap contact-grid">
+  <div>
+    <form id="cabraForm">
+      <div class="field-group">
+        <span class="field-label">What do you need?</span>
+        <div class="chip-group" id="needChips">
+          <div class="chip">Website</div>
+          <div class="chip">Ecommerce</div>
+          <div class="chip">Google Ads</div>
+          <div class="chip">SEO</div>
+          <div class="chip">Brand Identity</div>
+          <div class="chip">Corporate Profile</div>
+          <div class="chip">Web Application</div>
+          <div class="chip">Business System</div>
+          <div class="chip">Other</div>
+        </div>
+      </div>
+
+      <div class="row-2">
+        <div class="field-group"><span class="field-label">Name</span><input class="text-input" type="text" placeholder="Your name"></div>
+        <div class="field-group"><span class="field-label">Company</span><input class="text-input" type="text" placeholder="Company name"></div>
+      </div>
+      <div class="row-2">
+        <div class="field-group"><span class="field-label">Email</span><input class="text-input" type="email" placeholder="you@company.com"></div>
+        <div class="field-group"><span class="field-label">Phone</span><input class="text-input" type="tel" placeholder="+___"></div>
+      </div>
+      <div class="row-2">
+        <div class="field-group"><span class="field-label">Country</span><input class="text-input" type="text" placeholder="Country"></div>
+        <div class="field-group"><span class="field-label">Budget (optional)</span><input class="text-input" type="text" placeholder="Approximate budget"></div>
+      </div>
+      <div class="field-group">
+        <span class="field-label">Project details</span>
+        <textarea class="text-input" placeholder="Tell us about the project..." rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="margin-top:20px;">Start the project <span class="btn-arrow">→</span></button>
+    </form>
+
+    <div class="info-block">
+      <div class="info-row"><span class="label-sm">Email</span><a href="mailto:hello@cabra.tech" style="font-size:14px;">hello@cabra.tech</a></div>
+      <div class="info-row"><span class="label-sm">Response time</span><span style="font-size:14px;color:var(--gray-mid);">Within 1–2 business days</span></div>
+    </div>
+  </div>
+
+  <div class="contact-obj">
+    <svg width="90%" viewBox="0 0 600 600" id="contactObject">
+      <defs>
+        <linearGradient id="metalGrad2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#2a2a2a"/><stop offset="50%" stop-color="#0a0a0a"/><stop offset="100%" stop-color="#1c1c1c"/>
+        </linearGradient>
+      </defs>
+      <path d="M 300 140 L 430 140 L 390 260 L 300 260 Z" fill="url(#metalGrad2)" stroke="rgba(255,255,255,.08)"/>
+      <path d="M 220 300 L 380 300 L 380 460 L 300 520 L 220 460 Z" fill="#e9e9e6" opacity=".9" id="cObjMain"/>
+      <path d="M 265 470 L 300 400 L 335 470 Z" fill="#A5C71A" id="cObjTri"/>
+    </svg>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="assets/cabra-logo.png" alt="CABRA Technology" style="height:24px;margin-bottom:20px;">
+        <p class="body-md" style="max-width:32ch;">A digital studio building products, brands and growth systems.</p>
+      </div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">Digital Products</a><a href="services.html">Growth</a><a href="services.html">Brand</a><a href="services.html">Systems</a></div>
+      <div class="footer-col"><h4>Studio</h4><a href="work.html">Work</a><a href="technology.html">Technology</a><a href="about.html">About</a><a href="process.html">Process</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="insights.html">Insights</a><a href="faq.html">FAQ</a><a href="solutions.html">Solutions</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="contact.html">Start a project</a><a href="mailto:hello@cabra.tech">hello@cabra.tech</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 CABRA Technology</span><span>EN · AR · SK</span></div>
+  </div>
+</footer>
+
+<script>
+  const cursorDot = document.getElementById('cursorDot');
+  window.addEventListener('mousemove', (e)=>{ cursorDot.style.left=e.clientX+'px'; cursorDot.style.top=e.clientY+'px'; });
+  document.querySelectorAll('a,button,.chip,input,textarea').forEach(el=>{
+    el.addEventListener('mouseenter', ()=>{ cursorDot.style.width='16px'; cursorDot.style.height='16px'; });
+    el.addEventListener('mouseleave', ()=>{ cursorDot.style.width='8px'; cursorDot.style.height='8px'; });
+  });
+
+  document.querySelectorAll('#needChips .chip').forEach(chip=>{
+    chip.addEventListener('click', ()=> chip.classList.toggle('selected'));
+  });
+
+  let progress = 0;
+  document.querySelectorAll('.text-input').forEach(inp=>{
+    inp.addEventListener('input', ()=>{
+      const filled = [...document.querySelectorAll('.text-input')].filter(i=>i.value.trim()!=='').length;
+      const total = document.querySelectorAll('.text-input').length;
+      progress = filled/total;
+      const tri = document.getElementById('cObjTri');
+      const main = document.getElementById('cObjMain');
+      if(tri){ tri.style.opacity = 0.4 + progress*0.6; }
+      if(main){ main.style.opacity = 0.7 + progress*0.3; }
+    });
+  });
+
+  document.getElementById('cabraForm').addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.textContent = 'Sent — we\'ll be in touch';
+    btn.style.background = '#A5C71A';
+  });
+</script>
+</body>
+</html>
